@@ -1,0 +1,12 @@
+import random
+
+def cemi_hesabla(n):
+    siyahı = [random.uniform(0, 1) for _ in range(n)]
+    cem = sum(siyahı)
+    return siyahı, cem
+
+n = 10  # Ədəd sayı
+siyahı, cem = cemi_hesabla(n)
+
+print(f"Siyahı: {siyahı}")
+print(f"Siyahının Cəmi: {cem}") 
